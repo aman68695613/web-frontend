@@ -1,6 +1,6 @@
 document.getElementById("screenshotBtn").addEventListener("click", async () => {
   try {
-    const response = await fetch("http://localhost:3000/screenshot", {
+    const response = await fetch("https://webbackend-1p8l.onrender.com/screenshot", {
       method: "POST"
     });
     const blob = await response.blob();
